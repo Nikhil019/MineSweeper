@@ -172,45 +172,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    /*private void checkIfGameComplete() {
-        //if the no of unrevealed tiles is equal to no of mines, then the user wins
-        if(NO_0F_MINES == buttonsToberevealed){
-            Toast.makeText(this,"You win",Toast.LENGTH_LONG).show();
-            revealAll();
-
-        }
-    }*/
-
-    /*public void revealAll(){
-        for(int i = 0;i<SIZE;i++){
-            for(int j = 0;j<SIZE;j++){
-                MyButton b = board[i][j];
-                if(!b.isReveal()) {
-                    b.setReveal(true);
-                }
-            }
-        }
-    }
-
-    public void revealNeighbours(MyButton bt){
-        int row = bt.getRow();
-        int col = bt.getColumn();
-        for(int i = 0;i<NeighbourI.length;i++) {
-                int neighbourRow = row + NeighbourI[i];
-                int neighbourCol = col + NeighbourJ[i];
-                if (neighbourRow >= 0 && neighbourRow < SIZE && neighbourCol >= 0 && neighbourCol < SIZE ) {
-                    MyButton neighbourbutton = board[neighbourRow][neighbourCol];
-                    if (!neighbourbutton.isReveal()) {
-                        neighbourbutton.setReveal(true);
-
-                        if (neighbourbutton.isEmpty()) {
-                            revealNeighbours(neighbourbutton);
-                        }
-                    }
-                }
-        }
-
-    }*/
 
     public boolean gameStatus(int countRevealed)
     {
